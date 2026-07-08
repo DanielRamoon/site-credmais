@@ -13,6 +13,11 @@ export const metadata: Metadata = {
   title: "Credmais | Crédito Consignado e Empréstimo Pessoal",
   description:
     "Aprovação rápida, taxas reduzidas e dinheiro na conta em poucas horas. Simule seu crédito consignado com a Credmais.",
+  icons: {
+    icon: "/assets/logo/logo.png",
+    shortcut: "/assets/logo/logo.png",
+    apple: "/assets/logo/logo.png",
+  },
 };
 
 export default function RootLayout({
