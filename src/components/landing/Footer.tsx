@@ -23,10 +23,6 @@ export function Footer() {
         <div className={styles.grid}>
           <div className={styles.brand}>
             <Logo className={styles.logo} />
-            <p>
-              Soluções em crédito consignado e empréstimo pessoal com
-              aprovação rápida, taxas competitivas e atendimento humanizado.
-            </p>
           </div>
 
           <div className={styles.column}>

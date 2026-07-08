@@ -10,14 +10,6 @@
   padding-bottom: 2.5rem;
 }
 
-.brand p {
-  margin-top: 1rem;
-  font-size: 0.9rem;
-  line-height: 1.6;
-  opacity: 0.85;
-  max-width: 280px;
-}
-
 @media (max-width: 1023px) {
   .brand {
     display: flex;
@@ -29,11 +21,6 @@
   .logo {
     justify-content: center;
     align-self: center;
-  }
-
-  .brand p {
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
