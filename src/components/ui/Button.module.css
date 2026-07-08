@@ -1,0 +1,63 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  border-radius: var(--radius);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  transition: background 0.2s, transform 0.2s, opacity 0.2s;
+  white-space: nowrap;
+}
+
+.button:hover {
+  transform: translateY(-1px);
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+}
+
+.icon svg {
+  width: 18px;
+  height: 18px;
+}
+
+.orange {
+  background: var(--orange);
+  color: var(--white);
+}
+
+.orange:hover {
+  background: var(--orange-hover);
+}
+
+.whatsapp {
+  background: var(--green-whatsapp);
+  color: var(--white);
+}
+
+.whatsapp:hover {
+  background: var(--green-whatsapp-hover);
+}
+
+.outline-white {
+  background: transparent;
+  color: var(--white);
+  border: 2px solid var(--white);
+}
+
+.outline-white:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+@media (min-width: 768px) {
+  .button {
+    padding: 0.875rem 1.5rem;
+    font-size: 0.85rem;
+  }
+}

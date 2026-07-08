@@ -1,0 +1,67 @@
+.section {
+  padding: 4rem 0;
+  background: var(--gray-50);
+}
+
+.grid {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.card {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 2rem 1.5rem;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.stars {
+  display: flex;
+  gap: 0.2rem;
+}
+
+.star {
+  width: 18px;
+  height: 18px;
+  color: var(--orange);
+}
+
+.card blockquote {
+  font-style: italic;
+  font-size: 0.95rem;
+  color: var(--gray-600);
+  line-height: 1.6;
+  flex: 1;
+}
+
+.card footer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.card footer strong {
+  font-size: 0.9rem;
+  color: var(--gray-800);
+}
+
+.card footer span {
+  font-size: 0.8rem;
+  color: var(--gray-400);
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section {
+    padding: 5rem 0;
+  }
+}
