@@ -1,4 +1,5 @@
 import { simulationRows, WHATSAPP_URL } from "@/data/landing";
+import { SimulateButton } from "@/components/simulation/SimulateButton";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { SectionTitle } from "@/components/ui/SectionTitle";
@@ -38,9 +39,7 @@ export function Simulation() {
               agora mesmo!
             </h3>
             <div className={styles.ctaActions}>
-              <Button href="#simulacao" variant="orange" icon={<CalculatorIcon />}>
-                Simular agora
-              </Button>
+              <SimulateButton />
               <Button
                 href={WHATSAPP_URL}
                 variant="whatsapp"

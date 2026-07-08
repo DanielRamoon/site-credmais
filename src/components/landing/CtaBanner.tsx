@@ -1,7 +1,8 @@
 import { WHATSAPP_URL } from "@/data/landing";
+import { SimulateButton } from "@/components/simulation/SimulateButton";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
-import { CalculatorIcon, WhatsAppIcon } from "@/components/icons";
+import { WhatsAppIcon } from "@/components/icons";
 import styles from "./CtaBanner.module.css";
 
 export function CtaBanner() {
@@ -20,13 +21,7 @@ export function CtaBanner() {
           >
             Falar no WhatsApp
           </Button>
-          <Button
-            href="#simulacao"
-            variant="outline-white"
-            icon={<CalculatorIcon />}
-          >
-            Simular agora
-          </Button>
+          <SimulateButton variant="outline-white" />
         </div>
       </Container>
     </section>

@@ -1,9 +1,9 @@
 import Image from "next/image";
 import { HERO_IMAGE, WHATSAPP_URL } from "@/data/landing";
+import { SimulateButton } from "@/components/simulation/SimulateButton";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import {
-  CalculatorIcon,
   MoneyIcon,
   OnlineIcon,
   SecurityIcon,
@@ -32,9 +32,7 @@ export function Hero() {
             horas!
           </p>
           <div className={styles.actions}>
-            <Button href="#simulacao" variant="orange" icon={<CalculatorIcon />}>
-              Simular agora
-            </Button>
+            <SimulateButton />
             <Button
               href={WHATSAPP_URL}
               variant="whatsapp"

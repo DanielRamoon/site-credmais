@@ -1,3 +1,4 @@
+import { Providers } from "@/components/Providers";
 import { Header } from "@/components/landing/Header";
 import { Hero } from "@/components/landing/Hero";
 import { Advantages } from "@/components/landing/Advantages";
@@ -11,7 +12,7 @@ import { Footer } from "@/components/landing/Footer";
 
 export default function Home() {
   return (
-    <>
+    <Providers>
       <Header />
       <main>
         <Hero />
@@ -24,6 +25,6 @@ export default function Home() {
         <CtaBanner />
       </main>
       <Footer />
-    </>
+    </Providers>
   );
 }
