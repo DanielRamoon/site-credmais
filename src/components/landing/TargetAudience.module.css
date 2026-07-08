@@ -3,6 +3,12 @@
   background: var(--gray-50);
 }
 
+.title {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.9s ease, transform 0.9s ease;
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -14,6 +20,19 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.9s ease, transform 0.9s ease;
+}
+
+.visible .title {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.visible .item {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .avatar {
@@ -66,5 +85,14 @@
   .item p {
     font-size: 0.75rem;
     max-width: 180px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .title,
+  .item {
+    opacity: 1;
+    transform: none;
+    transition: none;
   }
 }
