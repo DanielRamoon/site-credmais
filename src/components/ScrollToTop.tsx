@@ -2,22 +2,30 @@
 
 import { useEffect } from "react";
 
+function resetScroll() {
+  if ("scrollRestoration" in history) {
+    history.scrollRestoration = "manual";
+  }
+
+  if (window.location.hash) {
+    history.replaceState(null, "", window.location.pathname + window.location.search);
+  }
+
+  window.scrollTo(0, 0);
+}
+
 export function ScrollToTop() {
   useEffect(() => {
-    if ("scrollRestoration" in history) {
-      history.scrollRestoration = "manual";
-    }
+    resetScroll();
 
-    const scrollToTop = () => {
-      if (!window.location.hash) {
-        window.scrollTo(0, 0);
+    const handlePageShow = (event: PageTransitionEvent) => {
+      if (event.persisted) {
+        resetScroll();
       }
     };
 
-    scrollToTop();
-
-    window.addEventListener("pageshow", scrollToTop);
-    return () => window.removeEventListener("pageshow", scrollToTop);
+    window.addEventListener("pageshow", handlePageShow);
+    return () => window.removeEventListener("pageshow", handlePageShow);
   }, []);
 
   return null;

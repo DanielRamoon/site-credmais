@@ -22,6 +22,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              history.scrollRestoration = 'manual';
+              if (location.hash) {
+                history.replaceState(null, '', location.pathname + location.search);
+              }
+              window.scrollTo(0, 0);
+            `,
+          }}
+        />
+      </head>
       <body className={montserrat.variable}>
         <ScrollToTop />
         {children}
