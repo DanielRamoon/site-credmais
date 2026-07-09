@@ -58,7 +58,7 @@
 }
 
 .navList a:hover {
-  color: var(--green-medium);
+  color: var(--orange);
 }
 
 .cta {
