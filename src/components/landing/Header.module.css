@@ -2,8 +2,8 @@
   position: sticky;
   top: 0;
   z-index: 100;
-  background: var(--green-dark);
-  color: var(--white);
+  background: var(--white);
+  color: var(--green-dark);
   height: var(--header-height);
   box-shadow: var(--shadow-sm);
 }
@@ -34,7 +34,7 @@
   display: block;
   width: 100%;
   height: 2px;
-  background: var(--white);
+  background: var(--green-dark);
   border-radius: 2px;
   transition: transform 0.3s, opacity 0.3s;
 }
@@ -53,11 +53,12 @@
   font-size: 0.75rem;
   font-weight: 600;
   letter-spacing: 0.04em;
+  color: var(--green-dark);
   transition: color 0.2s;
 }
 
 .navList a:hover {
-  color: var(--orange);
+  color: var(--green-medium);
 }
 
 .cta {
@@ -70,7 +71,7 @@
     flex-direction: column;
     position: fixed;
     inset: 0;
-    background: var(--green-dark);
+    background: var(--white);
     padding: calc(var(--header-height) + 2rem) 2rem 2rem;
     gap: 2rem;
     align-items: center;
